@@ -18,8 +18,8 @@ public class Testonedemo {
 	public static void demo() {
 		
 		
-		WebDriverManager.edgedriver().setup();
-		WebDriver driver = new EdgeDriver();
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		
 		driver.manage().window().maximize();
