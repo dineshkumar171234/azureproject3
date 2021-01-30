@@ -1,5 +1,7 @@
 package mavenproject1.testone;
 
+import java.util.concurrent.TimeUnit;
+
 import javax.naming.ldap.ManageReferralControl;
 import javax.net.ssl.ManagerFactoryParameters;
 
@@ -18,6 +20,7 @@ public class Testonedemo {
 		
 		WebDriverManager.edgedriver().setup();
 		WebDriver driver = new EdgeDriver();
+		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		
 		driver.manage().window().maximize();
 		System.out.println("windows maximize");
