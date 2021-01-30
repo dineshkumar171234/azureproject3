@@ -13,17 +13,17 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Testonedemo {
-
+WebDriver driver;
 	@Test
 	public static void demo() {
 		
 		
 		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
+		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		
-		driver.manage().window().maximize();
-		System.out.println("windows maximize");
+		
+		System.out.println("windows not maximized");
 		driver.get("https://www.rameshsoft.com");
 		System.out.println("executed");
 		driver.close();
