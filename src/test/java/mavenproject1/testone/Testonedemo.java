@@ -15,7 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Testonedemo {
 WebDriver driver;
 	@Test
-	public static void demo() {
+	public void demo() {
 		
 		
 		WebDriverManager.chromedriver().setup();
